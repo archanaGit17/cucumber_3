@@ -1,0 +1,72 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate registration details",
+        "description": "",
+        "id": "validate-the-demo-automation-site;validate-registration-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9687822643,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on demo site",
+            "match": {
+              "location": "LoginPage.user_is_on_demo_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9199621287,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters the details",
+            "match": {
+              "location": "LoginPage.user_enters_the_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "archana",
+                  "subbian",
+                  "chennai",
+                  "archana.sk95@gmail.com",
+                  "9003261856",
+                  "Archana$123",
+                  "Archana$123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13930465,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify url contains WebTable",
+            "match": {
+              "location": "LoginPage.verify_url_contains_WebTable()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate the demo automation site",
+    "description": "",
+    "id": "validate-the-demo-automation-site",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/LoginSteps.feature",
+    "tags": []
+  }
+]

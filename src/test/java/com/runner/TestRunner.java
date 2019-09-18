@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"src/test/resources"}, glue= {"com.fb.stepdefinition"})
+@CucumberOptions(features= {"src/test/resources"}, glue= {"com.fb.stepdefinition"}, plugin= {"html:target","json:target/report.json"})
 public class TestRunner {
 
 }
